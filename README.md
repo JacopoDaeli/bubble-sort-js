@@ -7,13 +7,13 @@
 ## Install
 
 ```sh
-$ npm install --save bubblesort-js
+$ npm install --save bubble-sort-js
 ```
 
 ## Usage
 
 ```js
-const bubblesort = require('bubblesort-js');
+const bubblesort = require('bubble-sort-js');
 
 
 // Ascending order
