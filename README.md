@@ -15,9 +15,7 @@ $ npm install --save bubble-sort-js
 ```js
 const bubblesort = require('bubble-sort-js');
 
-
 // Ascending order
-
 bubblesort([3,1,4,1,5,9,2,6,5,4]);
 // => [1,1,2,3,4,4,5,5,6,9]
 
@@ -29,7 +27,6 @@ bubblesort([5,2,4,6,1,3]);
 
 
 // Descending order
-
 function comparator(a, b) { return b - a; }
 
 bubblesort([5,2,2,6,1,3], comparator);
@@ -40,6 +37,7 @@ bubblesort([0,0,0,0,0,-1], comparator);
 
 
 // Ascending sort arrays of objects
+function orderImages(a, b) { return a.order - b.order };
 
 const images = [
   {href: 'http://path/to/something/awesome', caption: 'Awesome', order: 4},
@@ -48,15 +46,13 @@ const images = [
   {href: 'http://path/to/something/amazing', caption: 'Amazing', order: 2}
 ];
 
-function orderImages(a, b) { return a.order - b.order };
-
-bubblesort(people, comparePeople);
+bubblesort(images, orderImages);
 /*
 => [
-  {href: 'http://path/to/something/terrifik', caption: 'Terrifik', order: 1},
-  {href: 'http://path/to/something/amazing', caption: 'Amazing', order: 2},
-  {href: 'http://path/to/something/crazy', caption: 'Crazy', order: 3},
-  {href: 'http://path/to/something/awesome', caption: 'Awesome', order: 4}
-]
+    {href: 'http://path/to/something/terrifik', caption: 'Terrifik', order: 1},
+    {href: 'http://path/to/something/amazing', caption: 'Amazing', order: 2},
+    {href: 'http://path/to/something/crazy', caption: 'Crazy', order: 3},
+    {href: 'http://path/to/something/awesome', caption: 'Awesome', order: 4}
+  ]
 */
 ```
