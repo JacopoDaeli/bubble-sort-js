@@ -1,3 +1,5 @@
+# Bubble Sort
+
 [Bubble Sort](http://en.wikipedia.org/wiki/Bubble_sort) algorithm javascript implementation wth O(n^2) complexity.
 
 > Bubble sort has worst-case and average complexity both О(n^2), where n is the number of items being sorted. The significant advantage that bubble sort has over most other implementations, even quicksort, but not insertion sort, is that the ability to detect that thel ist is sorted is efficiently built into the algorithm. When the list is already sorted (best-case), the complexity of bubble sort is only O(n).
