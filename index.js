@@ -19,9 +19,9 @@ function comparator(a, b) {
  */
 module.exports = function (arr, fn) {
   fn = fn || comparator;
-  let tmp;
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = i; j > 0; j--) {
+  var tmp;
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = i; j > 0; j--) {
       if (fn(arr[j], arr[j - 1]) < 0) {
         tmp = arr[j];
         arr[j] = arr[j - 1];
