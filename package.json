@@ -1,6 +1,6 @@
 {
   "name": "bubble-sort-js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Bubble Sort algorithm javascript implementation. ",
   "main": "index.js",
   "scripts": {
